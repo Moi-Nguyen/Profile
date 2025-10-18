@@ -123,7 +123,7 @@ window.addEventListener("mousemove", updateBadgeParallax);
 
 const root = document.documentElement;
 
-const navButtons = document.querySelectorAll(".sidebar-btn[data-target]");
+const navButtons = document.querySelectorAll(".nav-trigger[data-target]");
 const sections = Array.from(document.querySelectorAll(".section[id]"));
 
 const setActiveButton = (targetId) => {

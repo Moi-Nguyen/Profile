@@ -20,32 +20,40 @@
       <img src="assets/profile1.png" alt="Profile avatar" />
     </div>
     <nav class="sidebar-nav">
-      <button class="sidebar-btn active" data-tooltip="Home" aria-label="Home" data-target="#home">
+      <button class="sidebar-btn nav-trigger active" data-tooltip="Home" aria-label="Home" data-target="#home">
         <i class="fa-solid fa-house-chimney"></i>
       </button>
-      <button class="sidebar-btn" data-tooltip="Profile" aria-label="Profile" data-target="#about">
+      <button class="sidebar-btn nav-trigger" data-tooltip="Profile" aria-label="Profile" data-target="#about">
         <i class="fa-solid fa-user-astronaut"></i>
       </button>
-      <button class="sidebar-btn" data-tooltip="Dashboard" aria-label="Dashboard" data-target="#skills">
+      <button class="sidebar-btn nav-trigger" data-tooltip="Dashboard" aria-label="Dashboard" data-target="#skills">
         <i class="fa-solid fa-layer-group"></i>
       </button>
-      <button class="sidebar-btn" data-tooltip="Du an" aria-label="Du an" data-target="#projects">
+      <button class="sidebar-btn nav-trigger" data-tooltip="Du an" aria-label="Du an" data-target="#projects">
         <i class="fa-solid fa-table-cells-large"></i>
       </button>
-      <button class="sidebar-btn" data-tooltip="Chat" aria-label="Chat" data-target="#community">
+      <button class="sidebar-btn nav-trigger" data-tooltip="Chat" aria-label="Chat" data-target="#community">
         <i class="fa-solid fa-comments"></i>
       </button>
-      <button class="sidebar-btn" data-tooltip="Clipboard" aria-label="Clipboard" data-target="#journey">
+      <button class="sidebar-btn nav-trigger" data-tooltip="Clipboard" aria-label="Clipboard" data-target="#journey">
         <i class="fa-solid fa-clipboard-list"></i>
       </button>
-      <button class="sidebar-btn" data-tooltip="Tai CV" aria-label="Tai CV" data-target="#resume">
+      <button class="sidebar-btn nav-trigger" data-tooltip="Tai CV" aria-label="Tai CV" data-target="#resume">
         <i class="fa-solid fa-file-arrow-down"></i>
       </button>
-      <button class="sidebar-btn" data-tooltip="Lien he" aria-label="Lien he" data-target="#contact">
+      <button class="sidebar-btn nav-trigger" data-tooltip="Lien he" aria-label="Lien he" data-target="#contact">
         <i class="fa-solid fa-envelope"></i>
       </button>
     </nav>
   </aside>
+
+  <nav class="top-nav">
+    <a href="#home" class="top-nav__link nav-trigger active" data-target="#home">Home</a>
+    <a href="#about" class="top-nav__link nav-trigger" data-target="#about">Profile</a>
+    <a href="#skills" class="top-nav__link nav-trigger" data-target="#skills">Dashboard</a>
+    <a href="#projects" class="top-nav__link nav-trigger" data-target="#projects">Dự án</a>
+    <a href="#contact" class="top-nav__link nav-trigger" data-target="#contact">Liên hệ</a>
+  </nav>
 
   <main class="main-section">
     <section id="home" class="section hero-section">
