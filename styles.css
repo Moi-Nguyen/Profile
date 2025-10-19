@@ -641,6 +641,112 @@ body::after {
   gap: 60px;
 }
 
+.interests-section .section-heading {
+  align-items: center;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+.interest-card {
+  background: var(--surface-1);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 25px 55px rgba(8, 6, 30, 0.48);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.interest-body {
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(200px, 0.9fr);
+  gap: 28px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.interest-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.interest-text h3 {
+  font-size: 24px;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.interest-text p {
+  color: rgba(224, 230, 255, 0.88);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.interest-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.interest-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(228, 233, 255, 0.9);
+}
+
+.interest-list li span {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.interest-media {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  width: min(240px, 100%);
+  aspect-ratio: 1;
+  box-shadow: 0 20px 45px rgba(10, 8, 35, 0.4);
+  align-self: flex-start;
+  justify-self: center;
+}
+
+.interest-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(12, 10, 40, 0) 0%, rgba(12, 10, 40, 0.35) 100%);
+  pointer-events: none;
+}
+
+.interest-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.interest-card:nth-child(1) {
+  background: linear-gradient(160deg, rgba(68, 91, 198, 0.28), rgba(19, 36, 110, 0.65));
+}
+
+.interest-card:nth-child(2) {
+  background: linear-gradient(160deg, rgba(72, 44, 160, 0.32), rgba(13, 30, 96, 0.7));
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1521,6 +1627,16 @@ body::after {
     display: none;
   }
 
+  .interest-body {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    justify-items: center;
+  }
+
+  .interest-media {
+    width: min(260px, 100%);
+  }
+
   .sidebar {
     inset: 30px auto auto 30px;
     flex-direction: row;
@@ -1593,6 +1709,18 @@ body::after {
 @media (max-width: 720px) {
   body {
     padding-bottom: 120px;
+  }
+
+  .interest-card {
+    padding: 26px 24px;
+  }
+
+  .interest-media {
+    aspect-ratio: 1;
+  }
+
+  .interest-text h3 {
+    white-space: normal;
   }
 
   .sidebar {
