@@ -760,13 +760,17 @@ body::after {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  --skill-accent: rgba(198, 206, 255, 0.95);
+  --skill-accent-soft: rgba(198, 206, 255, 0.18);
+  --skill-gradient: linear-gradient(90deg, rgba(120, 165, 255, 0.95), rgba(198, 134, 255, 0.92));
+  --skill-icon-bg: rgba(136, 154, 255, 0.28);
 }
 
 .skill-icon {
   width: 52px;
   height: 52px;
   border-radius: 18px;
-  background: rgba(136, 154, 255, 0.28);
+  background: var(--skill-icon-bg);
   display: grid;
   place-items: center;
   font-size: 22px;
@@ -795,9 +799,132 @@ body::after {
 .progress-bar span {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(120, 165, 255, 0.95), rgba(198, 134, 255, 0.92));
+  background: var(--skill-gradient);
   border-radius: inherit;
   box-shadow: 0 10px 25px rgba(114, 140, 255, 0.45);
+}
+
+.section-heading .section-subtitle {
+  font-size: 15px;
+  color: rgba(216, 223, 255, 0.78);
+  margin: 0 auto;
+  text-align: center;
+  max-width: 520px;
+}
+
+.skills-section .section-heading .eyebrow {
+  margin-inline: auto;
+  justify-content: center;
+}
+
+.skill-subtitle {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(213, 221, 255, 0.7);
+}
+
+.skill-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.skill-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(228, 233, 255, 0.9);
+}
+
+.skill-list li::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  left: 0;
+  top: 0.6em;
+  background: var(--skill-accent);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.22);
+  opacity: 0.75;
+}
+
+.skill-list li strong {
+  display: block;
+  color: #f3f4ff;
+  font-weight: 600;
+}
+
+.skill-list li span {
+  display: block;
+  font-size: 13px;
+  color: rgba(206, 214, 255, 0.7);
+}
+
+.skill-highlight,
+.skill-progress {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 16px;
+  display: grid;
+  gap: 6px;
+}
+
+.skill-highlight__label {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--skill-accent);
+  font-weight: 600;
+}
+
+.skill-highlight p,
+.skill-progress p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(224, 230, 255, 0.85);
+  line-height: 1.6;
+}
+
+.skill-progress {
+  gap: 10px;
+}
+
+.skill-progress .progress-bar {
+  margin-top: 2px;
+}
+
+.skill-card--purple {
+  --skill-accent: rgba(198, 134, 255, 0.95);
+  --skill-accent-soft: rgba(198, 134, 255, 0.18);
+  --skill-gradient: linear-gradient(90deg, rgba(198, 134, 255, 0.95), rgba(120, 165, 255, 0.95));
+  --skill-icon-bg: rgba(204, 163, 255, 0.2);
+}
+
+.skill-card--green {
+  --skill-accent: rgba(120, 247, 198, 0.95);
+  --skill-accent-soft: rgba(120, 247, 198, 0.18);
+  --skill-gradient: linear-gradient(90deg, rgba(120, 247, 198, 0.95), rgba(96, 210, 255, 0.95));
+  --skill-icon-bg: rgba(120, 247, 198, 0.22);
+}
+
+.skill-card--blue {
+  --skill-accent: rgba(126, 193, 255, 0.95);
+  --skill-accent-soft: rgba(126, 193, 255, 0.18);
+  --skill-gradient: linear-gradient(90deg, rgba(126, 193, 255, 0.95), rgba(144, 134, 255, 0.95));
+  --skill-icon-bg: rgba(126, 193, 255, 0.22);
+}
+
+.skill-card--pink {
+  --skill-accent: rgba(255, 155, 222, 0.95);
+  --skill-accent-soft: rgba(255, 155, 222, 0.18);
+  --skill-gradient: linear-gradient(90deg, rgba(255, 155, 222, 0.95), rgba(176, 128, 255, 0.95));
+  --skill-icon-bg: rgba(255, 155, 222, 0.22);
 }
 
 .skill-metrics {

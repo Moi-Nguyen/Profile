@@ -26,8 +26,8 @@
       <button class="sidebar-btn nav-trigger" data-tooltip="Profile" aria-label="Profile" data-target="#about">
         <i class="fa-solid fa-user-astronaut"></i>
       </button>
-      <button class="sidebar-btn nav-trigger" data-tooltip="Dashboard" aria-label="Dashboard" data-target="#skills">
-        <i class="fa-solid fa-layer-group"></i>
+      <button class="sidebar-btn nav-trigger" data-tooltip="Skillset" aria-label="Skillset" data-target="#skills">
+        <i class="fa-solid fa-swatchbook"></i>
       </button>
       <button class="sidebar-btn nav-trigger" data-tooltip="Du an" aria-label="Du an" data-target="#projects">
         <i class="fa-solid fa-table-cells-large"></i>
@@ -50,7 +50,7 @@
   <nav class="top-nav">
     <a href="#home" class="top-nav__link nav-trigger active" data-target="#home">Home</a>
     <a href="#about" class="top-nav__link nav-trigger" data-target="#about">Profile</a>
-    <a href="#skills" class="top-nav__link nav-trigger" data-target="#skills">Dashboard</a>
+    <a href="#skills" class="top-nav__link nav-trigger" data-target="#skills">Skillset</a>
     <a href="#projects" class="top-nav__link nav-trigger" data-target="#projects">Dự án</a>
     <a href="#contact" class="top-nav__link nav-trigger" data-target="#contact">Liên hệ</a>
   </nav>
@@ -175,68 +175,106 @@
 
     <section id="skills" class="section skills-section">
       <div class="section-heading">
-        <span class="eyebrow">Capabilities</span>
-        <h2>Dashboard of technical strengths</h2>
-        <p>Khung ky nang xoay quanh kien truc cloud, data vaf AI de tao ra gia tri kinh doanh nhanh chong.</p>
+        <span class="eyebrow">Skillset</span>
+        <h2>Languages &amp; Technical Skills</h2>
+        <p class="section-subtitle">Những ngôn ngữ lập trình và kỹ năng tôi đang học và phát triển trong lĩnh vực Mobile Development.</p>
       </div>
       <div class="skill-cards">
-        <article class="skill-card tilt" data-tilt-intensity="8">
+        <article class="skill-card tilt skill-card--purple" data-tilt-intensity="8">
           <div class="skill-icon">
-            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <i class="fa-solid fa-code"></i>
           </div>
-          <h3>Cloud Architecture</h3>
-          <p>Multi-region design, chaos engineering & cost governance.</p>
-          <div class="progress-bar" data-progress="92">
-            <span style="width: 92%"></span>
+          <h3>Programming Languages</h3>
+          <p class="skill-subtitle">Languages</p>
+          <ul class="skill-list">
+            <li><strong>Kotlin</strong><span>Main – Android</span></li>
+            <li><strong>Dart</strong><span>Flutter</span></li>
+            <li><strong>Java</strong><span>OOP, backend basics</span></li>
+            <li><strong>HTML / CSS / JavaScript</strong><span>UI prototypes</span></li>
+          </ul>
+          <div class="skill-highlight">
+            <span class="skill-highlight__label">🧠 Strength</span>
+            <p>Hiểu vững cấu trúc dữ liệu, logic lập trình và clean code.</p>
           </div>
-          <div class="skill-metrics">
-            <span>50+ workloads migrated</span>
-            <span>4 public clouds</span>
+          <div class="skill-progress">
+            <span class="skill-highlight__label">Progress</span>
+            <p>Advanced in Kotlin | Intermediate Flutter</p>
+            <div class="progress-bar" data-progress="85">
+              <span style="width: 85%"></span>
+            </div>
           </div>
         </article>
 
-        <article class="skill-card tilt" data-tilt-intensity="8">
+        <article class="skill-card tilt skill-card--green" data-tilt-intensity="8">
           <div class="skill-icon">
-            <i class="fa-solid fa-database"></i>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
           </div>
-          <h3>Data Engineering</h3>
-          <p>Streaming pipelines, data mesh and machine learning ops.</p>
-          <div class="progress-bar" data-progress="88">
-            <span style="width: 88%"></span>
+          <h3>Frameworks &amp; Tools</h3>
+          <p class="skill-subtitle">Toolkit</p>
+          <ul class="skill-list">
+            <li><strong>Android Studio</strong><span>Firebase, Retrofit</span></li>
+            <li><strong>Jetpack Compose</strong><span>Room DB</span></li>
+            <li><strong>Git</strong><span>GitHub</span></li>
+            <li><strong>VS Code</strong><span>Postman</span></li>
+          </ul>
+          <div class="skill-highlight">
+            <span class="skill-highlight__label">🧩 Focus</span>
+            <p>Tối ưu hiệu suất app, quản lý API, và lưu trữ dữ liệu hiệu quả.</p>
           </div>
-          <div class="skill-metrics">
-            <span>8 TB/day ingest</span>
-            <span>Latency &lt; 2s</span>
+          <div class="skill-progress">
+            <span class="skill-highlight__label">Progress</span>
+            <p>80% mastered Android ecosystem</p>
+            <div class="progress-bar" data-progress="80">
+              <span style="width: 80%"></span>
+            </div>
           </div>
         </article>
 
-        <article class="skill-card tilt" data-tilt-intensity="8">
+        <article class="skill-card tilt skill-card--blue" data-tilt-intensity="8">
           <div class="skill-icon">
-            <i class="fa-solid fa-shield"></i>
+            <i class="fa-solid fa-users"></i>
           </div>
-          <h3>Security Engineering</h3>
-          <p>Zero trust network, policy as code and threat detection.</p>
-          <div class="progress-bar" data-progress="84">
-            <span style="width: 84%"></span>
+          <h3>Soft Skills</h3>
+          <p class="skill-subtitle">Collaboration</p>
+          <ul class="skill-list">
+            <li>Làm việc nhóm &amp; giao tiếp trong nhóm kỹ thuật</li>
+            <li>Tư duy giải quyết vấn đề &amp; phản hồi nhanh</li>
+            <li>Quản lý thời gian và tinh thần học hỏi</li>
+          </ul>
+          <div class="skill-highlight">
+            <span class="skill-highlight__label">💬 Mindset</span>
+            <p>Luôn sẵn sàng tiếp thu công nghệ mới.</p>
           </div>
-          <div class="skill-metrics">
-            <span>9 compliance projects</span>
-            <span>SIEM automation</span>
+          <div class="skill-progress">
+            <span class="skill-highlight__label">Progress</span>
+            <p>High adaptability &amp; collaboration</p>
+            <div class="progress-bar" data-progress="90">
+              <span style="width: 90%"></span>
+            </div>
           </div>
         </article>
 
-        <article class="skill-card tilt" data-tilt-intensity="8">
+        <article class="skill-card tilt skill-card--pink" data-tilt-intensity="8">
           <div class="skill-icon">
-            <i class="fa-solid fa-people-group"></i>
+            <i class="fa-solid fa-rocket"></i>
           </div>
-          <h3>Tech Leadership</h3>
-          <p>Mentoring squads, OKR alignment and product discovery.</p>
-          <div class="progress-bar" data-progress="90">
-            <span style="width: 90%"></span>
+          <h3>Future Goals</h3>
+          <p class="skill-subtitle">Growth Path</p>
+          <ul class="skill-list">
+            <li>Thành thạo iOS (Swift / SwiftUI)</li>
+            <li>Xây dựng ứng dụng full-stack (Node.js + Flutter)</li>
+            <li>Tham gia Vactrack &amp; open-source projects</li>
+          </ul>
+          <div class="skill-highlight">
+            <span class="skill-highlight__label">🚀 Vision</span>
+            <p>Trở thành Mobile Engineer toàn diện về UI/UX và kỹ thuật.</p>
           </div>
-          <div class="skill-metrics">
-            <span>12 cross-functional squads</span>
-            <span>90% sprint predictability</span>
+          <div class="skill-progress">
+            <span class="skill-highlight__label">Progress</span>
+            <p>Ongoing learning path</p>
+            <div class="progress-bar" data-progress="70">
+              <span style="width: 70%"></span>
+            </div>
           </div>
         </article>
       </div>
