@@ -606,6 +606,9 @@ body::after {
   flex-direction: column;
   gap: 16px;
   max-width: 640px;
+  align-items: center;
+  text-align: center;
+  margin-inline: auto;
 }
 
 .eyebrow {
@@ -616,6 +619,8 @@ body::after {
   letter-spacing: 4px;
   text-transform: uppercase;
   color: rgba(198, 214, 255, 0.82);
+  justify-content: center;
+  margin-inline: auto;
 }
 
 .eyebrow::before {
@@ -635,6 +640,8 @@ body::after {
   color: rgba(224, 230, 255, 0.88);
   line-height: 1.7;
   font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .about-section {
@@ -652,6 +659,12 @@ body::after {
   grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
   gap: 28px;
   align-items: stretch;
+  justify-content: center;
+}
+
+.interest-grid::after {
+  content: "";
+  flex: 1 1 0;
 }
 
 .interest-card {
@@ -1391,6 +1404,7 @@ body::after {
 .journey-grid {
   display: grid;
   gap: 28px;
+  justify-content: center;
 }
 
 .journey-avatar-card {
